@@ -7,6 +7,7 @@ export class DaoUser {
 
     private getRepo(): Repository<User> {
         return getConnection().getRepository(User);
+
             
     }
     getAllUsers(): Promise<User[]> {
