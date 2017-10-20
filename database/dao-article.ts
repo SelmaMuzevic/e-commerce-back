@@ -15,7 +15,7 @@ export class DaoArticle {
     getArticleById(id: number): Promise<Article> {
         return this.getRepo().findOneById(id);
     }
-    addArticle(article: Article): Promise<User> {
+    addArticle(article: Article): Promise<Article> {
         return this.getRepo().save(article);
     }
     removeArticle(id:number): Promise<any> {

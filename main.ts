@@ -2,7 +2,9 @@ import 'reflect-metadata';
 
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
+
 import { routerUser } from './routers/user-router';
+import { routerProfil } from "./routers/profil-router";
 import { createConnection } from 'typeorm';
 
 createConnection();
